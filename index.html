@@ -1,1 +1,630 @@
-Hello World
+<!DOCTYPE html>
+<!--[if IE 9]>         <html class="ie9 no-focus"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-focus"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+
+        <title>Dafi wedding website</title>
+
+        <meta name="description" content="Website Pernikahan Daud & Fitri.">
+        <meta name="author" content="Arsycode">
+        <meta name="robots" content="noindex, nofollow">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+
+        <!-- Icons -->
+        <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+
+        <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+        <link rel="manifest" href="assets/img/favicons/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!-- END Icons -->
+
+        <!-- Stylesheets -->
+        <!-- Web fonts -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
+
+        <!-- Bootstrap and OneUI CSS framework -->
+        <link rel="stylesheet" href="assets/js/plugins/magnific-popup/magnific-popup.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" id="css-main" href="assets/css/oneui.css">
+
+        <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
+        <link rel="stylesheet" id="css-theme" href="assets/css/themes/smooth.min.css">
+
+        <style media="screen">
+        .header-navbar-transparent.header-navbar-fixed.header-navbar-scroll #header-navbar {
+            background-color: rgba(255, 108, 157, 0.73);
+        }
+
+        .bg-primary-dark-op {
+          background-color: rgba(255, 108, 157, 0.57);
+              height: 720px;
+        }
+
+        @font-face {
+            font-family: wd;
+            src: url(assets/fonts/wd.ttf);
+        }
+
+        @font-face {
+            font-family: wd2;
+            src: url(assets/fonts/wd2.otf);
+        }
+
+        .wd {
+          font-family: wd;
+          font-size: 100px;
+        }
+
+        .wd2 {
+          font-family: wd;
+          /*font-size: 100px;*/
+          font-size: 20px;
+        }
+
+        .wdName{
+          font-family: wd2;
+        }
+
+        .bg-gray-lighter {
+          background-color: rgba(255, 147, 183, 0.26);
+        }
+
+        .nav-main-header a {
+          /*display: block;
+          padding: 0 12px;
+          min-height: 34px;*/
+          color: #FFFF00;
+          /*font-weight: 600;
+          line-height: 34px;*/
+      }
+
+      .calendar {
+        margin:.25em 10px 10px 0;
+        padding-top:5px;
+        float:left;
+        width:80px;
+        background:#ededef;
+        background:-webkit-gradient(linear,left top,left bottom,from(#ededef),to(#ccc));
+        background:-moz-linear-gradient(top,#ededef,#ccc);
+        font:bold 30px/60px Arial Black,Arial,Helvetica,sans-serif;
+        text-align:center;
+        color:#000;
+        text-shadow:#fff 0 1px 0;
+        -moz-border-radius:3px;
+        -webkit-border-radius:3px;
+        border-radius:3px;
+        position:relative;
+        -moz-box-shadow:0 2px 2px #888;
+        -webkit-box-shadow:0 2px 2px #888;
+        box-shadow:0 2px 2px #888
+        }
+
+        .calendar em {
+          display: block;
+          font: normal bold 11px/30px Arial,Helvetica,sans-serif;
+          color: #fff;
+          text-shadow: #ff93b7 0 -1px 0;
+          background: #04599a;
+          background: -webkit-gradient(linear,left top,left bottom,from(#ff6c9d),to(#ff6c9d));
+          background: -moz-linear-gradient(top,#04599a,#00365a);
+          -moz-border-radius-bottomright: 3px;
+          -webkit-border-bottom-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+          -moz-border-radius-bottomleft: 3px;
+          -webkit-border-bottom-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+          border-top: 1px solid #ff93b7;
+      }
+
+        .calendar:before,.calendar:after {
+        content:'';
+        float:left;
+        position:absolute;
+        top:5px;
+        width:8px;
+        height:8px;
+        background: #fff;
+        z-index:1;
+        -moz-border-radius:10px;
+        -webkit-border-radius:10px;
+        border-radius:10px;
+        -moz-box-shadow:0 1px 1px #fff;
+        -webkit-box-shadow:0 1px 1px #fff;
+        box-shadow:0 1px 1px #fff
+        }
+
+        .calendar:before {
+        left:11px
+        }
+
+        .calendar:after {
+        right:11px
+        }
+
+        .calendar em:before,.calendar em:after {
+        content:'';
+        float:left;
+        position:absolute;
+        top:-5px;
+        width:4px;
+        height:14px;
+        background:#dadada;
+        background:-webkit-gradient(linear,left top,left bottom,from(#f1f1f1),to(#aaa));
+        background:-moz-linear-gradient(top,#f1f1f1,#aaa);
+        z-index:2;
+        -moz-border-radius:2px;
+        -webkit-border-radius:2px;
+        border-radius:2px
+        }
+
+        .calendar em:before {
+        left:13px
+        }
+
+        .calendar em:after {
+        right:13px
+        }
+
+        audio {
+          display: none;
+          vertical-align: baseline;
+          width: 100%;
+      }
+
+        </style>
+        <!-- END Stylesheets -->
+    </head>
+    <body>
+        <!-- Page Container -->
+        <!--
+            Available Classes:
+
+            'enable-cookies'             Remembers active color theme between pages (when set through color theme list)
+
+            'sidebar-l'                  Left Sidebar and right Side Overlay
+            'sidebar-r'                  Right Sidebar and left Side Overlay
+            'sidebar-mini'               Mini hoverable Sidebar (> 991px)
+            'sidebar-o'                  Visible Sidebar by default (> 991px)
+            'sidebar-o-xs'               Visible Sidebar by default (< 992px)
+
+            'side-overlay-hover'         Hoverable Side Overlay (> 991px)
+            'side-overlay-o'             Visible Side Overlay by default (> 991px)
+
+            'side-scroll'                Enables custom scrolling on Sidebar and Side Overlay instead of native scrolling (> 991px)
+
+            'header-navbar-fixed'        Enables fixed header
+            'header-navbar-transparent'  Enables a transparent header (if also fixed, it will get a solid dark background color on scrolling)
+        -->
+        <div id="page-container" class="header-navbar-fixed header-navbar-transparent">
+            <!-- Header -->
+            <header id="header-navbar" class="content-mini content-mini-full">
+                <div class="content-boxed">
+                    <!-- Header Navigation Right -->
+                    <ul class="nav-header pull-right">
+
+                        <li class="hidden-md hidden-lg">
+                            <!-- Toggle class helper (for main header navigation below in small screens), functionality initialized in App() -> uiToggleClass() -->
+                            <button class="btn btn-link text-white pull-right" data-toggle="class-toggle" data-target=".js-nav-main-header" data-class="nav-main-header-o" type="button">
+                                <i class="fa fa-navicon"></i>
+                            </button>
+                        </li>
+                    </ul>
+                    <!-- END Header Navigation Right -->
+
+                    <!-- Main Header Navigation -->
+                    <ul class="js-nav-main-header nav-main-header pull-right">
+                        <li class="text-right hidden-md hidden-lg">
+                            <!-- Toggle class helper (for main header navigation in small screens), functionality initialized in App() -> uiToggleClass() -->
+                            <button class="btn btn-link text-white" data-toggle="class-toggle" data-target=".js-nav-main-header" data-class="nav-main-header-o" type="button">
+                                <i class="fa fa-times"></i>
+                            </button>
+                        </li>
+                        <!-- <li>
+                            <a class="active" href="#home">Home</a>
+                        </li> -->
+                        <li>
+                            <a class="" href="#agenda"><i class="si si-calendar"></i> Acara</a>
+                        </li>
+                        <li>
+                            <a class="" href="#pray"><i class="si si-bubbles"></i> Do'a & Ucapan</a>
+                        </li>
+                        <li>
+                            <a class="" href="#map"><i class="fa fa-map-marker"></i> Lokasi</a>
+                        </li>
+                        <li>
+                            <a class="" href="#download"><i class="si si-arrow-down"></i> Download Aplikasi</a>
+                        </li>
+
+                    </ul>
+                    <!-- END Main Header Navigation -->
+
+                    <!-- Header Navigation Left -->
+                    <ul class="nav-header pull-left">
+                        <li class="header-content">
+                            <!-- <a class="h5" href="frontend_home.html">
+                                <i class="fa fa-circle-o-notch text-primary"></i> <span class="h4 font-w600 text-white">ne</span>
+                            </a> -->
+                        </li>
+                    </ul>
+                    <!-- END Header Navigation Left -->
+                </div>
+            </header>
+            <!-- END Header -->
+
+            <!-- Main Container -->
+            <main id="main-container">
+                <!-- Hero Content -->
+                <div id="home" class="bg-image" style="background-image: url('assets/img/df.png');">
+                    <div class="bg-primary-dark-op">
+                        <section class="content content-full content-boxed overflow-hidden">
+                            <!-- Section Content -->
+                            <br>
+                            <br><br><br>
+                            <div class="push-100-t push-50 text-center">
+                                <h1 class="wd text-white visibility-hidden" data-toggle="appear" data-class="animated fadeInDown">Wedding</h1>
+                                <h2 class="wdName h3 text-white-op push-30 visibility-hidden" data-toggle="appear" data-class="animated fadeInDown">Muhammad Daud A & Fitri Anggita</h2>
+                                <a class="btn btn-rounded btn-noborder btn-lg btn-primary visibility-hidden" data-toggle="appear" data-class="animated bounceIn" data-timeout="800" href="#agenda"><i class="si si-calendar"></i> Acara</a>
+                            </div>
+                            <div class="row visibility-hidden" data-toggle="appear" data-class="animated fadeInUp">
+                                <div class="col-sm-8 col-sm-offset-2">
+                                    <!-- <img class="img-responsive pull-b" src="assets/img/various/promo1.jpg" alt=""> -->
+                                </div>
+                            </div>
+                            <!-- END Section Content -->
+                        </section>
+                    </div>
+                </div>
+                <!-- END Hero Content -->
+
+                <!-- Classic Features #1 -->
+                <div class="bg-white" id="agenda">
+                    <section class="content content-boxed">
+                        <!-- Section Content -->
+                        <div class="row items-push-3x push-50-t nice-copy">
+                                <div class="wdName text-center push-30" style="padding:10px;">
+                                    <h2 class="h2">بِسْمِ اللهِ الرَّحْمنِ الرَّحِيمِ</h2>
+                                    <br>
+                                    <p style="font-size: 16px;">
+                                      <!-- warahmatullahi wabarakatuh -->
+                                      Assalamu'alaikum Warahmatullahi Wabarakatuh <br>
+                                      Dengan memohon ridho dan rahmat Allah SWT <br>
+                                      kami bermaksud menyelenggarakan Resepsi Pernikahan putra-putri kami :
+                                    </p>
+
+                                    <div class="row items-push js-gallery">
+                                      <div class="col-md-1">
+
+                                      </div>
+                                        <div class="col-md-2  col-sm-3 animated fadeIn">
+                                          <a class="img-link img-thumb" href="assets/img/f1.jpg">
+                                          <img class="img-responsive img-thumbnail" src="assets/img/f1.jpg" alt="">
+                                          </a>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6">
+                                          <b>
+                                            <p class="wd2" style="font-size: 48px; color:#DAA520;margin-top: -20px;margin-bottom: -20px;" >
+                                              Mudammad Daud Abdullah
+                                            </p>
+                                          </b>
+                                          <p class="wdName" style="font-size:16px; color:#DAA520;">Putra kedua dari Bpk. Abdullah Dachan & Ibu Mamah Maryamah</p>
+                                          <b><p class="wd2" style="font-size: 48px;color:#DAA520;margin-top: -20px;margin-bottom: -20px;" >
+                                              &  Fitri Anggita
+                                          </p></b>
+                                          <p class="wdName" style="font-size:16px; color:#DAA520;">Putri pertama dari Bpk. Wawan Setiawan & Ibu Nia Kurnia</p>
+                                          <!-- <br> -->
+                                        </div>
+                                        <div class="col-md-2  col-sm-3 animated fadeIn">
+                                          <a class="img-link img-thumb" href="assets/img/f2.jpeg">
+                                          <img class="img-responsive img-thumbnail" src="assets/img/f2.jpeg" alt="">
+                                          </a>
+                                        </div>
+                                        <div class="col-md-1">
+
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <!-- <div class="row items-push js-gallery">
+                                        <div class="col-md-7 col-sm-9">
+                                          <b><p class="wd2 text-right" style="font-size: 48px;color:#DAA520;margin-top: -20px;margin-bottom: -20px;" >
+                                                Fitri Anggita
+                                          </p></b>
+                                          <p class="wdName text-right" style="font-size:16px; color:#DAA520;">Putri pertama dari Bpk. Wawan Setiawan & Ibu Nia Kurnia</p>
+                                        </div>
+                                        <div class="col-md-2  col-sm-3 animated fadeIn">
+                                          <a class="img-link img-thumb" href="assets/img/f2.jpeg">
+                                          <img class="img-responsive img-thumbnail" src="assets/img/f2.jpeg" alt="">
+                                          </a>
+                                        </div>
+                                          <div class="col-md-3 ">
+                                          </div>
+                                    </div> -->
+
+
+                                    <!-- <br> -->
+
+                                    <p style="font-size: 16px;margin-bottom: 5px;">
+                                      Yang insya Allah akan diselenggarakan pada :
+                                    </p>
+                                    <div class="row" style="padding:10px;">
+                                        <div class="col-md-3 col-sm-2">
+                                        </div>
+                                        <div class="col-md-8 col-sm-9">
+                                          <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-3 ">
+                                              <!-- <center> -->
+                                              <b  style="margin-right: 25px;">Ahad</b>
+                                                <p class="calendar">
+                                                    6<em>Agustus 2017</em>
+                                              <!-- </center> -->
+                                              </p>
+                                            </div>
+                                            <div class="com-md-10 col-sm-10 col-xs-9 text-left">
+                                              <p style="font-size: 16px;">
+                                                <b>Akad Nikah (Masjid Ulul Albab - SMK Negeri 1 Cimahi)</b> <br> Pukul 08.00 WIB s.d. Selesai
+                                                <br>
+                                                <b>Resepsi Pernikahan (Aula - SMK Negeri 1 Cimahi)</b> <br> Pukul 10.00 WIB s.d. 14.00 WIB
+                                              </p>
+                                            </div>
+                                          </div>
+
+                                        </div>
+
+                                        <div class="col-md-1 ">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                        </div>
+
+                        <!-- END Section Content -->
+                    </section>
+                </div>
+                <!-- END Classic Features #1 -->
+
+                <div class="bg-gray-lighter" id="pray" >
+                    <section class="content content-full content-boxed">
+                        <!-- Section Content -->
+                        <br>
+                        <div class="push-20-t push-20 text-center">
+                            <center><b><h2 class="wdName h4 push-20 visibility-hidden" data-toggle="appear">Do'a & Ucapan</h2></b></center>
+                            <div class="row">
+                                <div class="col-md-2">
+                                </div>
+                                <div class="col-md-8">
+                                  <div id="disqus_thread" class="visibility-hidden" data-toggle="appear"></div>
+                                </div>
+                                <div class="col-md-2">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- END Section Content -->
+                    </section>
+                </div>
+                <div  id="map" data-wow-delay=".1s" style="width: 100%;height: 350px;" class="wow fadeIn"></div>
+                <!-- Get Started -->
+                <div class="bg-white" id="download">
+                    <section class="content content-full content-boxed">
+                        <!-- Section Content -->
+                        <br>
+                        <div class="push-20-t push-20 text-center">
+                            <center><h2 class="wdName h4  visibility-hidden" data-toggle="appear">Untuk kemudahan silahkan download aplikasi dibawah ini </h2></center>
+
+                            <center><a href="https://play.google.com/store/apps/details?id=com.arsycode.ourlovestory&hl=en" target="_blank"><img width="305px" src="assets/img/gp-badge.png" class="images-googleplay visibility-hidden" data-toggle="appear" data-class="animated bounceIn"></a>
+
+                              <!-- <a href="#" target="_blank"><img style="width: 265px;margin-left: 10px;" src="assets/img/os-badge.svg" class="images-googleplay visibility-hidden" data-toggle="appear" data-class="animated bounceIn"></a> -->
+
+                              </center>
+                        </div>
+                        <!-- END Section Content -->
+                    </section>
+                </div>
+
+                <div class="bg-white" style="margin:0px">
+                    <!-- <section> -->
+
+                    <!-- </section> -->
+                </div>
+                <!-- END Get Started -->
+            </main>
+
+            <!-- END Main Container -->
+
+            <!-- Footer -->
+            <footer id="page-footer" class="bg-white">
+                <div class="content content-boxed">
+                  <!-- Copyright Info -->
+                    <div class="font-s12 push-20 clearfix">
+                        <hr class="remove-margin-t">
+                        <div class="pull-right" style="margin-top: 4px;">
+                            Crafted with <i class="fa fa-heart text-city"></i> by <a class="wdName font-w600" href="http://arsycode.com/" target="_blank">Arsycode</a>
+                        </div>
+                        <div class="pull-left">
+                            <a class="wd2 font-w600" href="#" target="_blank">Wedding</a> &copy; <span >2017</span>
+                        </div>
+                    </div>
+                    <!-- END Copyright Info -->
+                </div>
+            </footer>
+            <!-- END Footer -->
+        </div>
+        <!-- END Page Container -->
+
+        <audio controls autoplay>
+          <source src="assets/bg.mp3" type="audio/mpeg">
+        </audio>
+
+        <script id="dsq-count-scr" src="https://dafi-wedding.disqus.com/count.js" async></script>
+        <!-- <a href="http://foo.com/bar.html#disqus_thread">Link</a>. -->
+        <script>
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://dafi-wedding.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+        <!-- OneUI Core JS: jQuery, Bootstrap, slimScroll, scrollLock, Appear, CountTo, Placeholder, Cookie and App.js -->
+
+        <script src="assets/js/core/jquery.min.js"></script>
+        <script src="assets/js/core/bootstrap.min.js"></script>
+        <script src="assets/js/core/jquery.slimscroll.min.js"></script>
+        <script src="assets/js/core/jquery.scrollLock.min.js"></script>
+        <script src="assets/js/core/jquery.appear.min.js"></script>
+        <script src="assets/js/core/jquery.countTo.min.js"></script>
+        <script src="assets/js/core/jquery.placeholder.min.js"></script>
+        <script src="assets/js/core/js.cookie.min.js"></script>
+        <script src="assets/js/app.js"></script>
+  <script src="assets/js/plugins/magnific-popup/magnific-popup.min.js"></script>
+        <!-- Page JS Code -->
+        <script>
+            $(function () {
+                // Init page helpers (Appear + CountTo plugins)
+                App.initHelpers(['appear', 'appear-countTo', 'magnific-popup']);
+
+                // var path = window.location.href;
+                // $('.nav-main li a').each(function () {
+                //     path = path.replace('#', '');
+                //     if (this.href === path) {
+                //         $(this).addClass('active');
+                //     }
+                // });
+                //
+                // var checkCookie = localStorage.getItem("Ilkom");
+                // if (checkCookie != null) {
+                //     $('.nav-main > li > a:eq(' + checkCookie + ')').parent('li').addClass('open').next().show();
+                // }
+                //
+                // $('.nav-main > li > a').click(function () {
+                //     var navIndex = $('.nav-main > li > a').index(this);
+                //     localStorage.setItem("Ilkom", navIndex);
+                // });
+            });
+
+            $('a[href*="#"]')
+            // Remove links that don't actually link to anything
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .click(function(event) {
+              // On-page links
+              if (
+                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                &&
+                location.hostname == this.hostname
+              ) {
+                // Figure out element to scroll to
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                // Does a scroll target exist?
+                if (target.length) {
+                  // Only prevent default if animation is actually gonna happen
+                  event.preventDefault();
+                  $('html, body').animate({
+                    scrollTop: target.offset().top
+                  }, 1000, function() {
+                    // Callback after animation
+                    // Must change focus!
+                    var $target = $(target);
+                    $target.focus();
+                    if ($target.is(":focus")) { // Checking if the target was focused
+                      return false;
+                    } else {
+                      $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                      $target.focus(); // Set focus again
+                    };
+                  });
+                }
+              }
+            });
+
+            $(function() {
+                $(document).on('click', 'a.page-scroll', function(event) {
+                    var $anchor = $(this);
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 1500, 'easeInOutExpo');
+                    event.preventDefault();
+                });
+            });
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZ9t01WM97GUE80iuqs5iJRtbBNM4dx8s"></script>
+
+        <script>
+        // When the window has finished loading create our google map below
+        google.maps.event.addDomListener(window, 'load', init);
+
+        function init() {
+            // Basic options for a simple Google Map
+            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+            var mapOptions = {
+                // How zoomed in you want the map to start at (always required)
+                zoom: 16,
+
+                // The latitude and longitude to center the map (always required)
+                center: new google.maps.LatLng(-6.902429,107.538190), // Dhaka ,
+                scrollwheel: false,
+                mapTypeControl: false,
+                mapTypeId: 'roadmap',
+                // disableDefaultUI: true,
+                // draggable: false,
+                // How you would like to style the map.
+                // This is where you would paste any style found on Snazzy Maps.
+                styles: [{"featureType":"landscape.natural","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#e0efef"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"hue":"#1900ff"},{"color":"#c0e8e8"}]}]
+            };
+
+            // Get the HTML DOM element that will contain your map
+            // We are using a div with id="map" seen below in the <body>
+            var mapElement = document.getElementById('map');
+
+            // Create the Google Map using our element and options defined above
+            var map = new google.maps.Map(mapElement, mapOptions);
+            var infowindow = new google.maps.InfoWindow({
+              content: '<b>Masjid - Aula <br> SMK Negeri 1 Cimahi</b><br/>Jl. Mahar Martanegara No.48 <br/>Kelurahan Utama, Cimahi Selatan<br />Kota Cimahi<br><a target="_blank" href="https://www.google.co.id/maps/place/SMK+Negeri+1+Cimahi/@-6.902429,107.5360013,17z/data=!3m1!4b1!4m5!3m4!1s0x2e68e5a529094097:0x5d638aee4fd75b1d!8m2!3d-6.902429!4d107.53819">View on Google Maps</a>'
+            });
+            var icon = {
+                url: "assets/img/map3.png", // url
+                scaledSize: new google.maps.Size(39,59), // scaled size
+                // origin: new google.maps.Point(0,0), // origin
+                // anchor: new google.maps.Point(0, 0) // anchor
+            };
+            // Let's also add a marker while we're at it
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(-6.902429,107.538190),
+                map: map,
+                icon: icon,
+                title: 'SM'
+            });
+
+            marker.addListener('click', function() {
+                infowindow.open(map, marker);
+            });
+        }
+
+        </script>
+    </body>
+</html>

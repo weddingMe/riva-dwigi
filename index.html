@@ -47,13 +47,29 @@
 
         <style media="screen">
         .header-navbar-transparent.header-navbar-fixed.header-navbar-scroll #header-navbar {
-            background-color: rgba(255, 108, 157, 0.73);
+            /*background-color: rgba(255, 108, 157, 0.73);*/
+            /*background-color: rgba(108, 240, 255, 0.73);*/
+            background-color: rgba(70, 137, 189, 0.52);
         }
 
         .bg-primary-dark-op {
-          background-color: rgba(255, 108, 157, 0.57);
+          /*background-color: rgba(255, 108, 157, 0.57);*/
+          background-color: rgba(71, 138, 184, 0.08);
               height: 720px;
         }
+
+        .btn-primary:hover {
+            color: #fff;
+            background-color: #5dcde8;
+            border-color: #5fd0ea;
+        }
+
+        .btn-primary:focus {
+            color: #fff;
+            background-color: #5dcde8;
+            border-color: #5fd0ea;
+        }
+
 
         @font-face {
             font-family: wd;
@@ -81,14 +97,18 @@
         }
 
         .bg-gray-lighter {
-          background-color: rgba(255, 147, 183, 0.26);
+          /*background-color: rgba(255, 147, 183, 0.26);*/
+          /*background-color: rgb(147, 244, 255);*/
+          background-color: rgb(158, 193, 220);
         }
 
         .nav-main-header a {
           /*display: block;
           padding: 0 12px;
           min-height: 34px;*/
-          color: #FFFF00;
+          /*color: #FFFF00;*/
+              /*color: #ff0000;*/
+              color: #fff;
           /*font-weight: 600;
           line-height: 34px;*/
       }
@@ -103,7 +123,8 @@
         background:-moz-linear-gradient(top,#ededef,#ccc);
         font:bold 30px/60px Arial Black,Arial,Helvetica,sans-serif;
         text-align:center;
-        color:#000;
+        /*color:#000;*/
+        color: #6d8284;
         text-shadow:#fff 0 1px 0;
         -moz-border-radius:3px;
         -webkit-border-radius:3px;
@@ -117,10 +138,12 @@
         .calendar em {
           display: block;
           font: normal bold 11px/30px Arial,Helvetica,sans-serif;
-          color: #fff;
-          text-shadow: #ff93b7 0 -1px 0;
+          /*color: #000;*/
+          color: #646464;
+          text-shadow: #93f4ff 0 -1px 0;
           background: #04599a;
-          background: -webkit-gradient(linear,left top,left bottom,from(#ff6c9d),to(#ff6c9d));
+
+          background: -webkit-gradient(linear,left top,left bottom,from(#93f4ff),to(#93f4ff));
           background: -moz-linear-gradient(top,#04599a,#00365a);
           -moz-border-radius-bottomright: 3px;
           -webkit-border-bottom-right-radius: 3px;
@@ -128,7 +151,7 @@
           -moz-border-radius-bottomleft: 3px;
           -webkit-border-bottom-left-radius: 3px;
           border-bottom-left-radius: 3px;
-          border-top: 1px solid #ff93b7;
+          border-top: 1px solid #93f4ff;
       }
 
         .calendar:before,.calendar:after {
@@ -185,6 +208,17 @@
           vertical-align: baseline;
           width: 100%;
       }
+
+      #page-footer a {
+    color: #009890;
+}
+
+.btn-primary {
+  /*background-color:#4f89c7;*/
+      color: #2f73aa;
+  background-color: rgb(255, 255, 255);
+}
+
 
         </style>
         <!-- END Stylesheets -->
@@ -246,9 +280,9 @@
                         <li>
                             <a class="" href="#map"><i class="fa fa-map-marker"></i> Lokasi</a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a class="" href="#download"><i class="si si-arrow-down"></i> Download Aplikasi</a>
-                        </li>
+                        </li> -->
 
                     </ul>
                     <!-- END Main Header Navigation -->
@@ -269,7 +303,7 @@
             <!-- Main Container -->
             <main id="main-container">
                 <!-- Hero Content -->
-                <div id="home" class="bg-image" style="background-image: url('assets/img/df.png');">
+                <div id="home" class="bg-image" style="background-image: url('assets/img/bg.png');">
                     <div class="bg-primary-dark-op">
                         <section class="content content-full content-boxed overflow-hidden">
                             <!-- Section Content -->
@@ -277,8 +311,8 @@
                             <br><br><br>
                             <div class="push-100-t push-50 text-center">
                                 <h1 class="wd text-white visibility-hidden" data-toggle="appear" data-class="animated fadeInDown">Wedding</h1>
-                                <h2 class="wdName h3 text-white-op push-30 visibility-hidden" data-toggle="appear" data-class="animated fadeInDown">Muhammad Daud A & Fitri Anggita</h2>
-                                <a class="btn btn-rounded btn-noborder btn-lg btn-primary visibility-hidden" data-toggle="appear" data-class="animated bounceIn" data-timeout="800" href="#agenda"><i class="si si-calendar"></i> Acara</a>
+                                <h2 class="wdName h3 text-white-op push-30 visibility-hidden" data-toggle="appear" data-class="animated fadeInDown">Dwigi Gustian & Riva Silviani</h2>
+                                <a class="btn btn-rounded btn-noborder btn-lg btn-primary visibility-hidden" data-toggle="appear" data-class="animated bounceIn" data-timeout="800" href="#agenda" style=""><i class="si si-calendar"></i> Acara</a>
                             </div>
                             <div class="row visibility-hidden" data-toggle="appear" data-class="animated fadeInUp">
                                 <div class="col-sm-8 col-sm-offset-2">
@@ -303,7 +337,7 @@
                                       <!-- warahmatullahi wabarakatuh -->
                                       Assalamu'alaikum Warahmatullahi Wabarakatuh <br>
                                       Dengan memohon ridho dan rahmat Allah SWT <br>
-                                      kami bermaksud menyelenggarakan Resepsi Pernikahan putra-putri kami :
+                                      kami bermaksud menyelenggarakan Syukuran Pernikahan putra-putri kami :
                                     </p>
 
                                     <div class="row items-push js-gallery">
@@ -311,26 +345,26 @@
 
                                       </div>
                                         <div class="col-md-2  col-sm-3 animated fadeIn">
-                                          <a class="img-link img-thumb" href="assets/img/f1.jpg">
-                                          <img class="img-responsive img-thumbnail" src="assets/img/f1.jpg" alt="">
+                                          <a class="img-link img-thumb" href="assets/img/f1.png">
+                                          <img class="img-responsive img-thumbnail" src="assets/img/f1.png" alt="">
                                           </a>
                                         </div>
                                         <div class="col-md-6 col-sm-6">
                                           <b>
                                             <p class="wd2" style="font-size: 48px; color:#DAA520;margin-top: -20px;margin-bottom: -20px;" >
-                                              Mudammad Daud Abdullah
+                                              Dwigi Gustian
                                             </p>
                                           </b>
-                                          <p class="wdName" style="font-size:16px; color:#DAA520;">Putra kedua dari Bpk. Abdullah Dachan & Ibu Mamah Maryamah</p>
+                                          <p class="wdName" style="font-size:16px; color:#DAA520;">Putra Kedua dari Bpk. Adas Kurnia & Ibu Otih Atikah</p>
                                           <b><p class="wd2" style="font-size: 48px;color:#DAA520;margin-top: -20px;margin-bottom: -20px;" >
-                                              &  Fitri Anggita
+                                              &  Riva silviani
                                           </p></b>
-                                          <p class="wdName" style="font-size:16px; color:#DAA520;">Putri pertama dari Bpk. Wawan Setiawan & Ibu Nia Kurnia</p>
+                                          <p class="wdName" style="font-size:16px; color:#DAA520;">Putri Bungsu dari Bpk. Ayat Suhaya & Ibu Ai Mamah</p>
                                           <!-- <br> -->
                                         </div>
                                         <div class="col-md-2  col-sm-3 animated fadeIn">
-                                          <a class="img-link img-thumb" href="assets/img/f2.jpeg">
-                                          <img class="img-responsive img-thumbnail" src="assets/img/f2.jpeg" alt="">
+                                          <a class="img-link img-thumb" href="assets/img/f2.png">
+                                          <img class="img-responsive img-thumbnail" src="assets/img/f2.png" alt="">
                                           </a>
                                         </div>
                                         <div class="col-md-1">
@@ -370,17 +404,17 @@
                                           <div class="row">
                                             <div class="col-md-2 col-sm-2 col-xs-3 ">
                                               <!-- <center> -->
-                                              <b  style="margin-right: 25px;">Ahad</b>
+                                              <b  style="margin-right: 25px;">Sabtu</b>
                                                 <p class="calendar">
-                                                    6<em>Agustus 2017</em>
+                                                    9<em>Sep 2017</em>
                                               <!-- </center> -->
                                               </p>
                                             </div>
                                             <div class="com-md-10 col-sm-10 col-xs-9 text-left">
                                               <p style="font-size: 16px;">
-                                                <b>Akad Nikah (Masjid Ulul Albab - SMK Negeri 1 Cimahi)</b> <br> Pukul 08.00 WIB s.d. Selesai
+                                                <b>Akad Nikah </b> <br> Pukul 08.00 WIB s.d. Selesai
                                                 <br>
-                                                <b>Resepsi Pernikahan (Aula - SMK Negeri 1 Cimahi)</b> <br> Pukul 10.00 WIB s.d. 14.00 WIB
+                                                <b>Syukuran Pernikahan </b> <br> Pukul 10.00 WIB s.d. Selesai
                                               </p>
                                             </div>
                                           </div>
@@ -425,28 +459,26 @@
                 </div>
                 <div  id="map" data-wow-delay=".1s" style="width: 100%;height: 350px;" class="wow fadeIn"></div>
                 <!-- Get Started -->
-                <div class="bg-white" id="download">
+                <!-- <div class="bg-white" id="download">
                     <section class="content content-full content-boxed">
-                        <!-- Section Content -->
+
                         <br>
                         <div class="push-20-t push-20 text-center">
                             <center><h2 class="wdName h4  visibility-hidden" data-toggle="appear">Untuk kemudahan silahkan download aplikasi dibawah ini </h2></center>
 
                             <center><a href="https://play.google.com/store/apps/details?id=com.arsycode.ourlovestory&hl=en" target="_blank"><img width="305px" src="assets/img/gp-badge.png" class="images-googleplay visibility-hidden" data-toggle="appear" data-class="animated bounceIn"></a>
 
-                              <!-- <a href="#" target="_blank"><img style="width: 265px;margin-left: 10px;" src="assets/img/os-badge.svg" class="images-googleplay visibility-hidden" data-toggle="appear" data-class="animated bounceIn"></a> -->
+
 
                               </center>
                         </div>
-                        <!-- END Section Content -->
+
                     </section>
-                </div>
+                </div> -->
 
-                <div class="bg-white" style="margin:0px">
-                    <!-- <section> -->
+                <!-- <div class="bg-white" style="margin:0px">
 
-                    <!-- </section> -->
-                </div>
+                </div> -->
                 <!-- END Get Started -->
             </main>
 
@@ -459,7 +491,7 @@
                     <div class="font-s12 push-20 clearfix">
                         <hr class="remove-margin-t">
                         <div class="pull-right" style="margin-top: 4px;">
-                            Crafted with <i class="fa fa-heart text-city"></i> by <a class="wdName font-w600" href="http://arsycode.com/" target="_blank">Arsycode</a>
+                            Crafted with <i class="fa fa-heart text-city"></i> by <a class="wdName font-w600" href="https://www.facebook.com/hdoanx1" target="_blank">Niceguy</a>
                         </div>
                         <div class="pull-left">
                             <a class="wd2 font-w600" href="#" target="_blank">Wedding</a> &copy; <span >2017</span>
@@ -586,7 +618,7 @@
                 zoom: 16,
 
                 // The latitude and longitude to center the map (always required)
-                center: new google.maps.LatLng(-6.902429,107.538190), // Dhaka ,
+                center: new google.maps.LatLng(-7.0590187,107.7878647), // Dhaka ,
                 scrollwheel: false,
                 mapTypeControl: false,
                 mapTypeId: 'roadmap',
@@ -604,7 +636,7 @@
             // Create the Google Map using our element and options defined above
             var map = new google.maps.Map(mapElement, mapOptions);
             var infowindow = new google.maps.InfoWindow({
-              content: '<b>Masjid - Aula <br> SMK Negeri 1 Cimahi</b><br/>Jl. Mahar Martanegara No.48 <br/>Kelurahan Utama, Cimahi Selatan<br />Kota Cimahi<br><a target="_blank" href="https://www.google.co.id/maps/place/SMK+Negeri+1+Cimahi/@-6.902429,107.5360013,17z/data=!3m1!4b1!4m5!3m4!1s0x2e68e5a529094097:0x5d638aee4fd75b1d!8m2!3d-6.902429!4d107.53819">View on Google Maps</a>'
+              content: '<b>Masjid - Aula <br> SMK Negeri 1 Cimahi</b><br/>Jl. Mahar Martanegara No.48 <br/>Kelurahan Utama, Cimahi Selatan<br />Kota Cimahi<br><a target="_blank" href="https://www.google.com/maps/search/Pabeyan/@-7.0590187,107.7878647,17z?hl=en">View on Google Maps</a>'
             });
             var icon = {
                 url: "assets/img/map3.png", // url
@@ -614,7 +646,7 @@
             };
             // Let's also add a marker while we're at it
             var marker = new google.maps.Marker({
-                position: new google.maps.LatLng(-6.902429,107.538190),
+                position: new google.maps.LatLng(-7.0590187,107.7878647),
                 map: map,
                 icon: icon,
                 title: 'SM'
